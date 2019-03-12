@@ -41,7 +41,7 @@ class Song
   def self.find_or_create_by_name(name)
 
     @@all ||= find_by_name(name)
-    song
+
   end
 
   def self.alphabetical
