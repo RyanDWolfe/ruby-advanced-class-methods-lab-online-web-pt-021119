@@ -42,9 +42,10 @@ class Song
   end
 
   def new_from_filename(file)
-    data =
-    name = data[0]
-    artist = data[1]
+    data = file.split(" - ")
+    artist = data.first
+    name = data.shift.join.split(".").first
+
     @name = name
     @artist_name = artist
   end
