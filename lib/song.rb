@@ -41,8 +41,12 @@ class Song
     self.all.sort_by {|word| word.name}
   end
 
-  def new_from_filename
-
+  def new_from_filename(file)
+    data =
+    name = data[0]
+    artist = data[1]
+    @name = name
+    @artist_name = artist
   end
 
   def create_from_filename
