@@ -41,7 +41,7 @@ class Song
   def self.find_or_create_by_name(name = "Blank Space")
 
     if find_by_name(name)
-      name.map{|song| song.name}
+      name
     else
       create_by_name(name)
     end
