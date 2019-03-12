@@ -39,11 +39,11 @@ class Song
   end
 
   def find_or_create_by_name
-    @@all.sort_by {|word| word.name}
+    
   end
 
-  def alphabetical
-
+  def self.alphabetical
+    @@all.sort_by {|word| word.name}
   end
 
   def new_from_filename
